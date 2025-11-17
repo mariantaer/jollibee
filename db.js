@@ -1,10 +1,11 @@
 const mysql = require("mysql2");
 
+// Use environment variables for security and portability
 const db = mysql.createConnection({
-    host: "your_host",         // e.g., remotemysql.com
-    user: "your_username",
-    password: "your_password",
-    database: "your_db_name"
+    host: process.env.DB_HOST,         // e.g., remotemysql.com or Render DB host
+    user: process.env.DB_USER,         // DB username
+    password: process.env.DB_PASS,     // DB password
+    database: process.env.DB_NAME      // DB name
 });
 
 db.connect((err) => {
