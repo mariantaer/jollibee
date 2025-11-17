@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Jollibee Franchise Application System",
   "type": "module",
-  "scripts": {
-    "dev": "vercel dev"
-  },
   "author": "Marian Lee Taer",
   "license": "ISC",
   "dependencies": {
