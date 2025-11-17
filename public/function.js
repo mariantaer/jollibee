@@ -22,7 +22,7 @@ form.addEventListener('submit', async (event) => {
   }
 
   try {
-      const response = await fetch("/api/submit", {
+    const response = await fetch("/api/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data)
@@ -47,9 +47,9 @@ form.addEventListener('submit', async (event) => {
   }
 
   popup.classList.remove('hidden');
-  form.reset();
 
   setTimeout(() => {
     popup.classList.add('hidden');
+    form.reset();
   }, 6000);
 });
