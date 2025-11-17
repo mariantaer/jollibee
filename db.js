@@ -1,10 +1,10 @@
 const mysql = require("mysql2");
 
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",   // XAMPP default
-    database: "jollibeedb"
+    host: "your_host",         // e.g., remotemysql.com
+    user: "your_username",
+    password: "your_password",
+    database: "your_db_name"
 });
 
 db.connect((err) => {
