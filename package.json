@@ -2,9 +2,9 @@
   "name": "jollibeeport",
   "version": "1.0.0",
   "description": "Jollibee Franchise Application System",
-  "main": "src/server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
